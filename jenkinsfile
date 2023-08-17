@@ -1,0 +1,23 @@
+pipelines{
+agent any
+stages{
+    stage('Build'){
+        steps{
+        ls -a
+        echo "This is the Build Stage"
+    }
+    }
+    stage('Test'){
+        steps{
+        ls -a
+        echo "This is the Test stage"
+    }
+    }
+    stage('Deploy'){
+        steps{
+        ls
+        echo "This is the Deploy stage"
+    }
+    }
+}
+}
